@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "outDir": "scripts",
+        "target": "ES6"
+    },
+
+    "files": [
+        "typescripts/script.ts",
+        "typescripts/Physics.ts"
+    ]
+}

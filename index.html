@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Physics Engine</title>
+
+    <style>
+        body {
+            font-size: 20px;
+        }
+        
+        #main {
+            columns: 2;
+            column-rule: 1px solid blueviolet;
+        }
+        
+        canvas {
+            border: 1px solid black;
+            column-span: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="form">
+            <label for="collisionType">Result of Collision: </label>
+            <select name="collisionType" id="collisionType">
+                <option value="bounce">Bounce</option>
+                <option value="merge">Merge</option>
+            </select> <br />
+
+            <label for="gravitationalConstant">Value of Gravitational Constant (0 means no gravity)</label>
+            <input type="number" name="gravitationalConstant" id="gravitationalConstant"> <br />
+
+            <input type="button" id="updateButton" value="Update">
+            <input type="button" id="startButton" value="Start">
+        </div>
+    </div>
+    <script src="/scripts/script.js" type="module"></script>
+</body>
+
+</html>
